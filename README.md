@@ -10,7 +10,6 @@ Welcome to the **X Clone** project, a full-stack web application designed to emu
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -19,7 +18,6 @@ Welcome to the **X Clone** project, a full-stack web application designed to emu
 ## Features
 
 - User Authentication (Email/Password and Google Sign-In)
-- OTP-based Login
 - Real-time Notifications
 - Create, Read, Update, Delete Posts
 - User Profiles
@@ -71,9 +69,6 @@ npm install
 2. Create a .env file in the backend directory and add the following environment variables:
 
 ```bash
-TWILIO_ACCOUNT_SID=your_twilio_account_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_PHONE_NUMBER=your_twilio_phone_number
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 ```
