@@ -2,6 +2,9 @@
 
 Welcome to the **X Clone** project, a full-stack web application designed to emulate the core functionalities of a social media platform. This project is built using modern technologies including React, Node.js, Express, MongoDB, and Firebase.
 
+![image](https://github.com/sohaum/X-Clone/assets/127203784/0766d4ab-a0ca-4681-bf4e-85e77b3c9255)
+
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
