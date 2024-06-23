@@ -1,0 +1,24 @@
+.feed {
+    flex: 0.5;
+    border-right: 1px solid rgb(224, 224, 224);
+    min-width: fit-content;
+    overflow-y: scroll;
+  }
+  
+  .feed::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .feed__header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid rgb(224, 224, 224);
+    padding: 2px 3px;
+  }
+  
+  .feed__header>h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }

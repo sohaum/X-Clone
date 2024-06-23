@@ -1,0 +1,135 @@
+/* EditProfile.css */
+
+:root {
+    --primary-color: #1DA1F2; /* Define your primary color */
+    --primary-color-dark: #1A91DA; /* Define a darker shade for hover */
+    --background-color: #ffffff; /* Modal background color */
+    --box-shadow-color: rgba(0, 0, 0, 0.2); /* Box shadow color */
+    --border-radius: 8px; /* Border radius for rounded corners */
+    --text-color: #000000; /* Main text color */
+    --input-background: #f5f8fa; /* Input background color */
+    --input-border: #e6ecf0; /* Input border color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+button:focus {
+    outline: none;
+}
+
+.edit-profile-button {
+    margin: 10px 0;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--input-border);
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.save-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.save-btn:focus {
+    outline: none;
+}
+
+.fill-content {
+    padding: 20px;
+}
+
+.text-field {
+    margin-bottom: 20px;
+    background-color: var(--input-background);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border);
+}
+
+.birthdate-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-top: 1px solid var(--input-border);
+}
+
+.birthdate-section span {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.child-modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.last-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid var(--input-border);
+}
+
+.last-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.last-btn:hover {
+    color: var(--primary-color-dark);
+}
+
+.last-section h2 {
+    font-size: 16px;
+    color: var(--text-color);
+}

@@ -1,0 +1,178 @@
+/* General styles for the main page */
+.page {
+    top: 0;
+    flex: 3; /* Take up remaining space in the flex container */
+    border-right: 1px solid rgb(201, 201, 201); /* Light gray right border */
+    padding: 0 20px; /* Padding on left and right */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column;
+    align-items: stretch; /* Stretch items vertically */
+    overflow: hidden; /* Hide overflow to prevent horizontal scroll */
+}
+
+.page h4 {
+    margin-top: 10px;
+     /* Remove margin for h4 elements */
+}
+
+.page .arrow-icon {
+    cursor: pointer; /* Pointer cursor for back arrow icon */
+    margin-right: 10px; /* Space between arrow icon and title */
+}
+
+/* Profile section styles */
+.mainProfile {
+    flex: 1; /* Take up remaining space in the main page */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.mainProfile .profile-bio {
+    padding: 20px; /* Padding inside profile bio section */
+}
+
+.mainProfile .profile-bio .coverImageContainer {
+    position: relative; /* Position relative for cover image container */
+    max-width: 100%; /* Ensure cover image does not exceed container width */
+}
+
+.mainProfile .profile-bio .coverImageContainer .coverImage {
+    width: 100%; /* Full width for cover image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure block display */
+}
+
+.mainProfile .profile-bio .hoverCoverImage {
+    position: absolute; /* Position absolutely */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    opacity: 0; /* Initially hidden */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.mainProfile .profile-bio .hoverCoverImage:hover {
+    opacity: 1; /* Show on hover */
+}
+
+.mainProfile .profile-bio .hoverCoverImage label {
+    color: #fff; /* White text color */
+    font-size: 24px; /* Font size for icon */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.mainProfile .profile-bio .hoverCoverImage label:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.mainProfile .profile-bio .hoverCoverImage .imageInput {
+    display: none; /* Hide file input by default */
+}
+
+.mainProfile .profile-bio .avatar-img {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space evenly */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Margin top */
+}
+
+.mainProfile .profile-bio .avatar-img .avatarContainer {
+    position: relative; /* Position relatively */
+    width: 120px; /* Avatar width */
+    height: 120px; /* Avatar height */
+}
+
+.mainProfile .profile-bio .avatar-img .avatarContainer .coverImage {
+    width: 100%; /* Full width for avatar image */
+    height: 100%; /* Full height for avatar image */
+    display: block; /* Ensure block display */
+    border-radius: 50%; /* Circular border */
+}
+
+.mainProfile .profile-bio .avatar-img .hoverAvatarImage {
+    position: absolute;
+    border-radius: 100%;
+    top: 60%;
+    width: 20%; /* Full width */
+    height: 20%; /* Full height */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    opacity: 0; /* Initially hidden */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.mainProfile .profile-bio .avatar-img:hover .hoverAvatarImage {
+    opacity: 0.7; /* Show on hover */
+}
+
+.mainProfile .profile-bio .avatar-img .hoverAvatarImage label {
+    color: #fff; /* White text color */
+    font-size: 24px; /* Font size for icon */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.mainProfile .profile-bio .avatar-img:hover .hoverAvatarImage label {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.mainProfile .profile-bio .avatar-img .hoverAvatarImage .imageInput {
+    display: none; /* Hide file input by default */
+}
+
+.mainProfile .profile-bio .userInfo {
+    margin-left: 20px; /* Margin left */
+}
+
+.mainProfile .profile-bio .userInfo .heading-3 {
+    margin-top: 0; /* Remove margin top for heading */
+    margin-bottom: 5px; /* Margin bottom */
+}
+
+.mainProfile .profile-bio .userInfo .usernameSection {
+    margin-top: 0; /* Remove margin top for username */
+    color: #657786; /* Gray text color */
+}
+
+.mainProfile .profile-bio .userInfo .infoContainer {
+    margin-top: 10px; /* Margin top */
+}
+
+.mainProfile .profile-bio .userInfo .infoContainer .subInfo {
+    margin-top: 5px; /* Margin top */
+    color: #657786; /* Gray text color */
+}
+
+.mainProfile .profile-bio .userInfo .infoContainer .subInfo.link {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center vertically */
+    color: #1da1f2; /* Blue link color */
+}
+
+.mainProfile .profile-bio .tweetsText {
+    margin-top: 20px; /* Margin top */
+    margin-bottom: 10px; /* Margin bottom */
+    color: #1da1f2; /* Blue text color */
+    font-weight: bold; /* Bold font weight */
+}
+
+.mainProfile .profile-bio hr {
+    margin-top: 5px; /* Margin top */
+    margin-bottom: 20px; /* Margin bottom */
+    border-color: #3f8ec7; /* Light gray border color */
+}
+
+/* Hide scrollbar for .profilePage */
+.profilePage::-webkit-scrollbar {
+    display: none;
+}
+
