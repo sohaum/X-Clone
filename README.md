@@ -20,7 +20,7 @@ Welcome to the **X Clone** project, a full-stack web application designed to emu
 
 ## Project Overview
 
-**X Clone** is a social media web application that allows users to sign up, log in, post updates, and interact with other users. It includes features such as OTP-based login for enhanced security, real-time notifications, and more.
+**X Clone** is a social media web application that allows users to sign up, log in, post updates, and interact with other users.
 
 ## Features
 
