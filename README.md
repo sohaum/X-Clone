@@ -25,7 +25,6 @@ Welcome to the **X Clone** project, a full-stack web application designed to emu
 ## Features
 
 - User Authentication (Email/Password and Google Sign-In)
-- Real-time Notifications
 - Create, Read, Update, Delete Posts
 - User Profiles
 - Explore and Search Functionality
